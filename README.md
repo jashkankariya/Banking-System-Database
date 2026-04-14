@@ -3,7 +3,6 @@
 
 **Course:** Database Management Systems
 **Program:** MBA Tech AI | Semester IV
-**Submission Date:** 10/04/2026
 
 ---
 
@@ -30,11 +29,13 @@ branches, and employees.
 
 | File | Description |
 |------|-------------|
-| `banking_system_schema.sql` | DDL file — creates all 9 tables with constraints |
-| `banking_system_data.sql` | DML file — inserts sample data (10+ rows per table) |
-| `banking_system_queries.sql` | 22 SQL queries covering all concepts |
-| `banking-system-app.html` | Frontend GUI (open in any browser) |
-| `DBMS_Project_Report.pdf` | Full project report |
+| `R015,R027,R039 Banking schema.sql` | DDL file — creates all 9 tables with constraints |
+| `R015,R027,R039 Banking data.sql` | DML file — inserts sample data (10+ rows per table) |
+| `R015,R027,R039 Banking queries.sql` | 22 SQL queries covering all concepts |
+| `R015,R027,R039 Banking .html` | Frontend GUI (open in any browser) |
+| `R015,R027,R039 Banking Project Report.pdf` | Full project report |
+| `R015,R027,R039 Banking Relational Schema.png` | Relational Schema Diagram of the project |
+| `R015,R027,R039 Banking ER Diagram.png` | ER Diagram of the entire project |
 | `README.md` | This file |
 
 ---
