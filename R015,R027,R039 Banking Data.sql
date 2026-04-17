@@ -2,7 +2,20 @@
 -- BANKING SYSTEM - SAMPLE DATA POPULATION
 -- At least 10 tuples per relation
 -- ============================================================
+USE banking_db;
 
+-- Clear old data first (in correct order due to foreign keys)
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE LOAN_PAYMENT;
+TRUNCATE TABLE TRANSACTION;
+TRUNCATE TABLE CARD;
+TRUNCATE TABLE LOAN;
+TRUNCATE TABLE ACCOUNT;
+TRUNCATE TABLE EMPLOYEE;
+TRUNCATE TABLE CUSTOMER;
+TRUNCATE TABLE BRANCH;
+TRUNCATE TABLE BANK;
+SET FOREIGN_KEY_CHECKS = 1;
 -- BANK
 INSERT INTO BANK (bank_name, headquarters, established, swift_code) VALUES
 ('Naitik Financial Bank', 'Bhilwara', 2006, 'NPBKINBB'),
@@ -35,6 +48,7 @@ INSERT INTO EMPLOYEE (branch_id, first_name, last_name, role, salary, hire_date)
 (8, 'Yatarth',   'Singh',     'IT Officer',         60000, '2017-02-28'),
 (9, 'Ashwini',   'Moharil',    'Cashier',            36000, '2022-06-15'),
 (10,'Sambhav',   'Khandelwal',    'Branch Manager',    82000, '2012-03-30'),
+(10,'Vishesh',   'Lad',    'Branch Manager',    82000, '2012-03-30'),
 (2, 'Jiya',    'Shah',    'Cashier',            37500, '2020-09-01');
 
 -- CUSTOMER
